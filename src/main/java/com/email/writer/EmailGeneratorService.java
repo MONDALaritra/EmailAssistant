@@ -72,7 +72,7 @@ public class EmailGeneratorService {
         // TODO Auto-generated method stub
         StringBuilder prompt = new StringBuilder();
         
-        prompt.append("Generate a professional email if it is a normal prompt or generate email reply if its a email content. Please don't generate a subject line ");
+        prompt.append("Generate a professional email if it is a normal prompt or generate email reply if its an email content. Please don't generate a subject line ");
         if(emailRequest.getTone() != null && !emailRequest.getTone().isEmpty()){
             prompt.append("Use a ").append(emailRequest.getTone()).append(" tone. ");
 
